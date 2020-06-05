@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <head>
+        
+        <title>Western Cape Schools Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    </head>
+    <body>
+       <div id="container">
+           <div class="flex-top">
+           <div id="header">
+               <h1>Mzamomtsha Primary School</h1>
+           </div>
+           <div class="nav">
+            <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            </ul>
+            </div>
+           </div>
+		
+		 <div class="apply">
+        
+        <div class="designBox" id="designBox">
+            <h1>Our school </h1>        
+            <p>
+                Our vision at Mzamomtsha Primary School is to empower students to acquire, demonstrate, articulate and value knowledge and skills that will support them, as life-long learners, to participate in and contribute to the global world and practice the core values of the school: respect, tolerance & inclusion, and excellence.
+                Our mission is to develop students with active and creative minds, a sense of understanding and compassion for others, and the courage to act on their beliefs. We stress the total development of each child: spiritual, moral, intellectual, social, emotional, and physical.
+            </p>
+        </div>
+
+        <div class="wrapper" id="wrapper">
+            <form action="" class="form-area">
+                <div class="details-area">
+
+                    <!-- This div contains all the input boxes.  -->
+                    <div class="input-field">
+                        <label>Name & Surname of Learner:</label>
+                        <input type="text" name="Name" id="label"/>
+                    
+                        <br/>
+                        <br/>
+
+                
+                        <label>Learners Date of Birth:</label>
+                        <input type="number" name="DOB"/>
+                    
+                        <br/>
+                        <br/>
+
+                
+                        <label>Student ID:</label>
+                        <input type="number" name=""/>
+                
+                        <br/>
+                        <br/>
+                        
+                        <label>Contact Number:</label>
+                        <input type="number"/>
+                        
+                        <br/>
+                        <br/>
+                        
+                        <label>Email Address:</label>
+                        <input type="email"/>
+                        
+                        <br/>
+                        <br/>
+                    </div>
+            
+                    <!-- This div contains the radio buttons. -->
+                    <div class="radio-field">
+                        <label>Select Grade</label>
+
+                        <!-- 
+                            Select initiates a selector and option gives the user 
+                             multiple choices.
+                        -->
+                        <select id = "Grade">
+                            <option value = "Grade R">R</option>
+                            <option value = "Grade 1">1</option>
+                            <option value = "Grade 2">2</option>
+                            <option value = "Grade 3">3</option>
+                            <option value = "Grade 4">4</option>
+                            <option value = "Grade 5">5</option>
+                            <option value = "Grade 6">6</option>
+                            <option value = "Grade 7">7</option>
+                            <option value = "Grade 8">8</option>
+                            <option value = "Grade 9">9</option>
+                            <option value = "Grade 10">10</option>
+                            <option value = "Grade 11">11</option>
+                            <option value = "Grade 12">12</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <label>Race</label><br><br>
+                        <input type="radio" name="race" value="white">
+                        <label for="female">White</label>
+
+                        <input type="radio" name="race" value="coloured">
+                        <label for="male">Coloured</label>
+
+                        <input type="radio" name="race" value="black">
+                        <label for="other">Black</label><br><br>
+                        
+                        <label>Gender<label><br>
+                        <input type="radio" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" name="gender" value="male">
+                        <label for="male">Male</label><br><br>
+                    </div>  
+                    </div>
+                </div>
+                <a class="applyButton" id="applyButton" onclick="showForm(); subName(); organizeData()">Open Form</a>
+            </form>
+        </div>
+    </div>
+    
+        <!-- Imports the javascript file into the HTML document. -->        
+        <script src="script.js"></script>
+	</body>
+</html>

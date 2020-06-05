@@ -1,0 +1,363 @@
+@media(min-width: 768px){
+body{
+   
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    background-image: url(HomeBack.jpg);
+    background-size: cover;
+    margin: 0;
+}
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+h1, h2{
+    margin: 0;
+    
+}
+h3{
+    padding-top: 10;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    height: 27px;
+
+}
+h4{
+  font-size: 20px;
+  text-align: center;
+  border:4px;
+}
+
+div.Logo{
+  width: 271px;
+  height: 205px;
+  background-image: url(Logo.jpeg);
+  background-image: no-repeat;
+  margin: 0;
+}
+
+div.poster{
+  width: 180px;
+  height: 281px;
+  background-image: url(poster.jpg);
+  background-image: no-repeat;
+
+  border-style: groove;
+  border-width: thick;
+  border-color: gray;
+}
+.events-posters{
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+@media(min-width: 768px){
+#container, #about-container, .events-container {
+    background-color:white;
+   
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.faq-container {
+  margin: 0  ;                      /*  STYLE FOR THE FAQ SECTION */
+  padding: 30px;
+  width: 688px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+#header, #about-header, .events-header {
+    
+  color: white;
+  text-align: center;
+  font-size: 21pt;
+  height: 50px;
+  padding: 16;
+  background-color: #000033;
+}
+
+.flex-top{
+  background-color: #000033;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events-content{
+padding-bottom: 15px;
+background-color: white;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: flex-start;
+}
+
+#content{
+padding: 2px;
+background-color: white;
+display: flex;                       /* FLEX-CONTAINER FOR THE CONTENT IN THE BODY */
+}
+
+#about-content{
+padding-bottom: 15px;
+background-color: white;           /* FLEX-CONTAINER FOR THE CONTENT IN THE BODY OF THE ABOUT PAGE */
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: flex-start;
+/*border: 2px solid red;*/
+}
+.nav {
+  border-top: 2px solid #999999;
+  padding: 5px;
+  flex-basis: auto;
+  background:#000033;
+  height:60px;
+}
+ul {
+	list-style:none;
+	margin:-10;
+	position:absolute;
+}
+ul li{
+	float:left;
+	margin-top:20px;
+}
+ul li a{
+  width:100px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:18px;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	font-family:Century Gothic;
+	font-weight:bold;
+}
+a:hover{
+	
+	background:#999999;	
+}
+ul li ul{
+	background:#000033;
+}
+ul li ul li {
+	float:none;
+}
+ul li ul{
+	display:none;
+}
+#main{
+    width: 650px;
+    float: right;
+    height: auto;
+    background-color: white;
+}
+.events-main{
+  flex: 4;
+    width: 700px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+#address-container, #about-main{
+  padding-left: 30px;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+
+.footer{
+    clear: both;
+    padding: 10px;
+    background-color: #999999;
+    color: white;
+    float: none;
+}
+#nav .selected{
+    font-weight: bold;
+}
+
+.social-icons {
+  text-align: center;                /* SOCIAL MEDIA ICON STYLE */
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:48px;
+  height:48px;
+  margin-right: 5px;
+}
+.social-media{
+  justify-self: flex-end;
+}
+
+/*
+.faq-container {
+    margin: 0  ;
+    padding: 30px;
+    width: 688px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+  }*/
+
+
+  .accordion a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: blue;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+
+    flex-wrap: wrap;
+  }
+  .accordion a:hover,
+  .accordion a:hover::after {
+    cursor: pointer;
+    color: black;
+  }
+  .accordion a:hover::after {
+    border: 1px solid red;
+  }
+  .accordion a.active {
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  .accordion a::after {
+    font-family: 'Ionicons';
+    content: '\f218';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: blue;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid blue;
+    text-align: center;
+  }
+  .accordion a.active::after {
+    font-family: 'Ionicons';
+    content: '\f209';
+    color: blue;
+    border: 1px solid blue;
+  }
+  .accordion {
+      background: white;
+  }
+  .accordion .faq-content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid blue;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+  }
+  .accordion .faq-content p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .accordion .faq-content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+  }
+  a:hover {
+    background: gainsboro;
+  }
+  #wrapper {
+    display: none;
+}
+
+#designBox {
+    display: block;
+}
+
+.designBox {
+    border-radius: 35px;
+    Width: 90%;
+    height: 600px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    
+}
+
+.designBox h1 {
+    margin-top: 2%;
+    text-align: left;
+    color: rgb(40, 91, 126);
+    font-size: 52px;
+}
+
+/* color: rgb(36, 100, 143); */
+
+.designBox p {
+    background: rgba(0, 0, 0, 0.3);
+    width: 60%;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000 3px 3px 3px blue;
+    box-shadow: 0 0 15px rgb(40, 91, 126);
+}
+
+
+.applyButton {
+    margin-left: 25%;
+    padding: 20px 80px 20px 80px;
+    height: 35px;
+    width: 40px;
+    color: black;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
